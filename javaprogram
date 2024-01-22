@@ -1,0 +1,14 @@
+import java.util.*;
+public class Garbage3
+{
+public static void main(String args[])
+throws Exception
+{
+Runtime rs=Runtime.getRuntime();
+System.out.println("Total Memory is"+rs.totalMemory());
+System.out.println("Free Memory in JVM before garbage collection="+rs.freeMemory());
+rs.gc();
+System.out.println("Free memory in JVM after garbage collectonn="+rs.freeMemory());
+}
+}
+
